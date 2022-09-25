@@ -1,0 +1,76 @@
+/*
+Elaina_1080p https://s3.bmp.ovh/imgs/2021/11/c5f6956d9a1c26bd.png
+Elaina_1080p_HD https://s3.bmp.ovh/imgs/2021/11/91df69eeee1af7c2.png
+SDVX_500 https://s3.bmp.ovh/imgs/2021/11/16f1fe177b9c4ad2.png
+*/
+
+body {
+    margin: 0;
+    background: #2e2e2c;
+}
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+::selection {
+    color: #e0e0e0;
+    background: rgba(255,64,129,.35);
+}
+
+#rin-bg{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    z-index: -1;
+    position: fixed;
+    background-color: rgba(66,66,66,.4);
+}
+
+video {
+    position: absolute;
+    /*right: 0px;*/
+    /*bottom: 0px;*/
+    min-width: 100%;
+    min-height: 100%;
+    top:50%;  left:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    width:30%;
+    height: 100%;
+    
+    /*margin: auto;
+    height: auto;  
+    width: auto;*/
+    /*height: 100%;
+    width: 100%;*/
+    /*background-size: cover;*/
+    z-index: -5;
+    object-fit: cover;
+    
+}
+
+#rin-footer {
+    bottom: 0;
+    margin: auto;
+    width: 100vw;
+    position: absolute;
+    padding: 10px 0 10px 0;
+}
+#rin-footer div {
+    font-size: 14px;
+    text-align: center;
+    color: rgba(255,255,255,.79);
+}
+#rin-footer div a {
+    color: #2196f3;
+    font-weight: 700;
+    transition: all .3s;
+    text-decoration: none;
+}
+.rin-tr {
+    width: 80%;
+    height: 2px;
+    margin: auto;
+    background: rgba(255,255,255,.3);
+}
