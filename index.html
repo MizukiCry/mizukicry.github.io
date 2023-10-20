@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="zh" class="no-js">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,8 @@
   <title>Secret Page</title>
   <meta name="Description" content="Home Page of MizukiCry">
   <meta name="color-scheme" content="dark light">
-  <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+  <script>(function (H) { H.className = H.className.replace(/\bno-js\b/, 'js') })(document.documentElement)</script>
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
   <link rel="icon" href="site_logo.png">
 </head>
 
@@ -35,6 +36,10 @@
         <a href="https://github.com/MizukiCry" class="animate-slide-in-down">GitHub</a>
         <a href="https://space.bilibili.com/62986991" class="animate-slide-in-down">bilibili</a>
       </div>
+      <div class="links-another">
+        <audio id="umi_hv" src="./assets/umi.ogg"></audio>
+        <a href="#" onclick="umi_play()" class="animate-slide-in-down">umi</a>
+      </div>
     </div>
     <div class="location">
       <span class="location-icon animate-slide-in-up">
@@ -49,6 +54,11 @@
 
   <script src="assets/vendors/jquery-3.3.1.min.js"></script>
   <script>
+
+    function umi_play() {
+      document.getElementById("umi_hv").play();
+    }
+
     $(function () {
       var SLIDE_IN_DOWN = { opacity: 1, top: 0 };
       var SLIDE_IN_UP = { opacity: 1, bottom: 0 };
@@ -73,7 +83,7 @@
       function animateQuote() {
         return $.when(
           animate('.quote-line-start', SLIDE_IN_LEFT),
-          animate('.quote-line-end',SLIDE_IN_RIGHT),
+          animate('.quote-line-end', SLIDE_IN_RIGHT),
           animate('.quote-icon-start', SLIDE_IN_DOWN),
           animate('.quote-icon-end', SLIDE_IN_UP)
         )
@@ -127,4 +137,5 @@
     });
   </script>
 </body>
+
 </html>
