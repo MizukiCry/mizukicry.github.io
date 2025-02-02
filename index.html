@@ -52,6 +52,10 @@
     </div>
   </div>
 
+  <footer class="footer">
+    <a href="https://icp.gov.moe/?keyword=20250808" target="_blank">萌ICP备20250808号</a>
+  </footer>
+
   <script src="assets/vendors/jquery-3.3.1.min.js"></script>
   <script>
 
@@ -73,7 +77,8 @@
           .then(animateTitle)
           .then(animateQuote)
           .then(animateLinks)
-          .then(animateLocation);
+          .then(animateLocation)
+          .then(animateFooter);
       }
 
       function animateTitle() {
@@ -111,6 +116,10 @@
           animate('.location-icon', SLIDE_IN_UP),
           animate('.location-text', SLIDE_IN_DOWN)
         );
+      }
+
+      function animateFooter() {
+        return animate('.footer', SLIDE_IN_UP);
       }
 
       function animate(selector, properties, delay, options) {

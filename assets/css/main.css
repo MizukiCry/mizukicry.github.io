@@ -184,6 +184,21 @@ ul, ol { list-style: none; }
   transition: all .3s ease;
 }
 
+/* Footer
+/* ================================================= */
+.footer {
+  position: fixed;
+  bottom: -30px;  /* 初始位置在屏幕下方 */
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+  opacity: 0;
+  z-index: 1;  /* 确保在最上层 */
+  transition: all 0.5s ease;  /* 与现有动画效果匹配 */
+}
+
 
 /* LIGHT MODE
 /* ================================================= */
@@ -199,7 +214,17 @@ a { color: #333; }
 .links a:hover { border-bottom-color: #333; }
 .location { color: #666; }
 .relocating { color: #ccc; }
-
+/* 亮色模式配色 */
+.footer a {
+  color: #666;
+  text-decoration: none;
+  border-bottom: 1px dotted #999;
+  transition: all 0.3s ease;
+}
+.footer a:hover {
+  color: #333;
+  border-bottom: 1px solid #333;
+}
 
 /* DARK MODE
 /* ================================================= */
@@ -215,4 +240,12 @@ a { color: #333; }
   .links a { border-bottom-color: #6C7486; }
   .links a:hover { color: #E4ECFA; border-bottom-color: #99A3BA; }
   .location { color: #6C7486; }
+  .footer a {
+    color: #6C7486;
+    border-bottom-color: #3F4656;
+  }
+  .footer a:hover {
+    color: #99A3BA;
+    border-bottom-color: #99A3BA;
+  }
 }
