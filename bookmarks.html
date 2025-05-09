@@ -1,43 +1,55 @@
 <!doctype html>
-<html lang="zh">
+<html lang="zh-CN">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="color-scheme" content="dark light">
-  <title>Bookmarks</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <title>Bookmarks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <style>
         body {
             font: 18px/1.8 Ruluko, "PingFang SC", "Microsoft Jhenghei", "Microsoft YaHei", sans-serif;
         }
+
         h1 {
             margin-top: 50px;
             text-align: center;
         }
+
         .bookmarks {
             display: flex;
             flex-wrap: wrap;
             margin: 50px 5%;
             width: 90%;
         }
+
         .bookmarks section {
             padding: 20px;
             flex-basis: 33.3%;
             box-sizing: border-box;
             border: 1px solid #eee;
         }
-        .bookmarks section:nth-of-type(2n - 1) { background: #fafafa; }
-        .bookmarks ul { padding: 0 15px; }
+
+        .bookmarks section:nth-of-type(2n - 1) {
+            background: #fafafa;
+        }
+
+        .bookmarks ul {
+            padding: 0 15px;
+        }
+
         .bookmarks ul li {
             position: relative;
             margin: 10px 0;
             list-style: none;
-          text-align: left;
+            text-align: left;
         }
+
         .bookmarks ul li:before {
             content: "";
             position: absolute;
@@ -48,14 +60,36 @@
             left: -13px;
             top: 12px;
         }
+
         @media (prefers-color-scheme: dark) {
-          html { background: #0e121c; }
-          body { color: #6C7486; }
-          h3 { color: #cadef8; }
-          .bookmarks section { border: 1px solid #2c2e43; background: #191e31; }
-          .bookmarks section:nth-of-type(2n - 1) { background: #151B2A; }
-          .bookmarks ul li:before { background: #6C7486; }
-          .bookmarks a:hover { color: #cadef8; }
+            html {
+                background: #0e121c;
+            }
+
+            body {
+                color: #6C7486;
+            }
+
+            h3 {
+                color: #cadef8;
+            }
+
+            .bookmarks section {
+                border: 1px solid #2c2e43;
+                background: #191e31;
+            }
+
+            .bookmarks section:nth-of-type(2n - 1) {
+                background: #151B2A;
+            }
+
+            .bookmarks ul li:before {
+                background: #6C7486;
+            }
+
+            .bookmarks a:hover {
+                color: #cadef8;
+            }
         }
     </style>
 </head>
@@ -91,8 +125,10 @@
                 <li><a href="http://ruby-doc.org/" target="_blank">Ruby Documentation</a></li>
                 <li><a href="http://guides.rubyonrails.org/" target="_blank">Ruby on Rails Guides</a></li>
                 <li><a href="http://api.rubyonrails.org/" target="_blank">Ruby on Rails API</a></li>
-                <li><a href="https://github.com/JuanitoFatas/ruby-style-guide/blob/master/README-zhCN.md" target="_blank">Ruby 风格指南</a></li>
-                <li><a href="https://github.com/JuanitoFatas/rails-style-guide/blob/master/README-zhCN.md" target="_blank">Rails 风格指南</a></li>
+                <li><a href="https://github.com/JuanitoFatas/ruby-style-guide/blob/master/README-zhCN.md"
+                        target="_blank">Ruby 风格指南</a></li>
+                <li><a href="https://github.com/JuanitoFatas/rails-style-guide/blob/master/README-zhCN.md"
+                        target="_blank">Rails 风格指南</a></li>
             </ul>
         </section>
 
@@ -115,7 +151,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://teropa.info/blog/2015/10/18/refactoring-angular-apps-to-components.html" target="_blank">
+                    <a href="http://teropa.info/blog/2015/10/18/refactoring-angular-apps-to-components.html"
+                        target="_blank">
                         Refactoring Angular Apps to Component Style
                     </a>
                 </li>
@@ -167,7 +204,8 @@
             <h3 id="dev-references">开发参考</h3>
             <ul>
                 <li>
-                    <a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/mvc.html" target="_blank">
+                    <a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/mvc.html"
+                        target="_blank">
                         Spring Web MVC framework
                     </a>
                     （<a href="http://mvc.linesh.tw/">中文版</a>）
@@ -202,17 +240,20 @@
             <h3 id="ios-path">iOS Learning Path</h3>
             <ul>
                 <li>
-                    <a href="https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/TheAppLifeCycle/TheAppLifeCycle.html" target="_blank">
+                    <a href="https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/TheAppLifeCycle/TheAppLifeCycle.html"
+                        target="_blank">
                         The App Life Cycle
                     </a>
                 </li>
                 <li>
-                    <a href="https://developer.apple.com/library/ios/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html" target="_blank">
+                    <a href="https://developer.apple.com/library/ios/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html"
+                        target="_blank">
                         Start Developing iOS Apps (Swift)
                     </a>
                 </li>
                 <li>
-                    <a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/" target="_blank">
+                    <a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/"
+                        target="_blank">
                         The Swift Programming Language
                     </a>
                 </li>
@@ -308,11 +349,14 @@
         <section>
             <h3 id="tool-references">工具参考</h3>
             <ul>
-                <li><a href="https://developer.chrome.com/devtools/docs/console" target="_blank">Google Chrome - Using the Console</a></li>
-                <li><a href="https://developer.chrome.com/devtools/docs/shortcuts" target="_blank">Google Chrome - Keyboard Shortcuts</a></li>
+                <li><a href="https://developer.chrome.com/devtools/docs/console" target="_blank">Google Chrome - Using
+                        the Console</a></li>
+                <li><a href="https://developer.chrome.com/devtools/docs/shortcuts" target="_blank">Google Chrome -
+                        Keyboard Shortcuts</a></li>
             </ul>
         </section>
     </div>
 
 </body>
+
 </html>
